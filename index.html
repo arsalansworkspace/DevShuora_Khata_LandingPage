@@ -72,12 +72,18 @@
 <a class="skip" href="#main">Skip to content</a>
 
 
+
 <header class="site-header" id="top">
   <div class="wrap nav">
 
     <!-- BRAND -->
-    <a class="brand" href="#top" aria-label="Devshuora Digital Khata home">
-      <img src="assets/img/devshuora-mark.png" alt="Devshuora" width="42" height="42">
+    <a class="brand" href="#top" aria-label="DevShuora Digital Khata home">
+      <img
+        src="assets/img/devshuora-mark.png"
+        alt="DevShuora"
+        width="42"
+        height="42"
+      >
       <span class="brand-text">
         <b>Dev<span>Shuora</span></b>
         <small>Digital Khata</small>
@@ -90,27 +96,36 @@
       <a href="#how">How it works</a>
       <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
+
+      <a class="signin mobile-signin" href="#" data-signin hidden>
+        Sign in
+      </a>
     </nav>
 
     <!-- ACTIONS -->
-    <div class="hero-premium-primary">
-      <a class="signin" href="#" data-signin hidden>
+    <div class="nav-cta">
+      <a
+        class="signin desktop-signin"
+        href="#"
+        data-signin
+        hidden
+      >
         Sign in
       </a>
 
       <a
-        class="btn  btn-sm "
+        class="btn btn-sm nav-demo"
         href="https://wa.me/923412149161?text=Assalam%20o%20Alaikum%2C%20I%20want%20a%20demo%20of%20Devshuora%20Digital%20Khata."
         target="_blank"
         rel="noopener"
       >
-        <span>Book a free demo</span>
+        <span >Book a free demo</span>
         <svg class="ico nav-arrow" aria-hidden="true">
           <use href="#i-arrow"/>
         </svg>
       </a>
 
-      <!-- MOBILE MENU -->
+      <!-- MOBILE MENU BUTTON -->
       <button
         class="burger"
         type="button"
@@ -118,7 +133,7 @@
         aria-expanded="false"
         aria-label="Open menu"
       >
-        <svg class="ico">
+        <svg class="ico" aria-hidden="true">
           <use href="#i-menu"/>
         </svg>
       </button>
@@ -126,6 +141,7 @@
 
   </div>
 </header>
+
 
 
 <main id="main">
@@ -336,15 +352,78 @@
 </section>
 
 
-<!-- Trust strip -->
-<section class="trust" aria-label="Highlights">
-  <ul class="wrap">
-    <li><span class="tile"><svg class="ico"><use href="#i-globe"/></svg></span>Urdu, Sindhi, Roman Urdu and English</li>
-    <li><span class="tile"><svg class="ico"><use href="#i-chat"/></svg></span>WhatsApp and SMS reminders</li>
-    <li><span class="tile"><svg class="ico"><use href="#i-offline"/></svg></span>Works offline, syncs later</li>
-    <li><span class="tile"><svg class="ico"><use href="#i-lock"/></svg></span>Owner-only profit and cash</li>
-  </ul>
+
+<!-- =========================================
+     DIGITAL KHATA TRUST STRIP
+========================================= -->
+
+<section class="trust trust-premium" aria-label="Digital Khata highlights">
+
+  <div class="wrap">
+
+    <ul class="trust-list">
+
+      <!-- Languages -->
+      <li class="trust-item">
+        <span class="trust-icon">
+          <svg class="ico" aria-hidden="true">
+            <use href="#i-globe"/>
+          </svg>
+        </span>
+
+        <span class="trust-text">
+          <strong>Made for Everyone</strong>
+          <small>Urdu, Sindhi, Roman Urdu & English</small>
+        </span>
+      </li>
+
+      <!-- Reminders -->
+      <li class="trust-item">
+        <span class="trust-icon">
+          <svg class="ico" aria-hidden="true">
+            <use href="#i-chat"/>
+          </svg>
+        </span>
+
+        <span class="trust-text">
+          <strong>Easy Reminders</strong>
+          <small>WhatsApp & SMS notifications</small>
+        </span>
+      </li>
+
+      <!-- Offline -->
+      <li class="trust-item">
+        <span class="trust-icon">
+          <svg class="ico" aria-hidden="true">
+            <use href="#i-offline"/>
+          </svg>
+        </span>
+
+        <span class="trust-text">
+          <strong>Work Without Internet</strong>
+          <small>Automatic sync when reconnected</small>
+        </span>
+      </li>
+
+      <!-- Privacy -->
+      <li class="trust-item">
+        <span class="trust-icon">
+          <svg class="ico" aria-hidden="true">
+            <use href="#i-lock"/>
+          </svg>
+        </span>
+
+        <span class="trust-text">
+          <strong>Owner-Controlled Access</strong>
+          <small>Keep sensitive business records private</small>
+        </span>
+      </li>
+
+    </ul>
+
+  </div>
 </section>
+
 
 
 <!-- =========================================

@@ -20,28 +20,30 @@ const SIGN_IN_URL = '';
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 
-  // Phone menu
-  var burger = document.querySelector('.burger');
-  var menu = document.getElementById('menu');
-  var setMenu = function (open) {
+  
+const burger = document.querySelector('.burger');
+const menu = document.getElementById('menu');
+
+if (burger && menu) {
+  const setMenu = (open) => {
     menu.classList.toggle('open', open);
     burger.setAttribute('aria-expanded', open ? 'true' : 'false');
     burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
   };
-  burger.addEventListener('click', function () { setMenu(!menu.classList.contains('open')); });
-  menu.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
 
-  // Fade sections in as they scroll into view
-  var items = document.querySelectorAll('.reveal');
-  if (!('IntersectionObserver' in window)) {
-    items.forEach(function (el) { el.classList.add('in'); });
-    return;
-  }
-  var io = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-      if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
-    });
-  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-  items.forEach(function (el) { io.observe(el); });
-})();
+  burger.addEventListener('click', () => {
+    setMenu(!menu.classList.contains('open'));
+  });
+
+  menu.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => setMenu(false));
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') setMenu(false);
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 760) setMenu(false);
+  });
+}})();
