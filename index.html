@@ -1,0 +1,2517 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Devshuora Digital Khata: Udhaar, Billing and Stock App for Shops in Pakistan</title>
+<meta name="description" content="Digital khata for Pakistani shops. Record udhaar, print bills, track stock and purchases and see your profit, in Urdu, Sindhi and English. Free 14-day trial.">
+<meta name="keywords" content="digital khata, udhaar app, khata app, billing software, stock management, kiryana software, Urdu accounting app, Pakistan">
+<meta name="theme-color" content="#0b2a6f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Devshuora Digital Khata: udhaar, bills and stock in one app">
+<meta property="og:description" content="Record udhaar, print bills, buy from suppliers, track stock and see your real profit. Urdu, Sindhi, Roman Urdu and English.">
+<meta property="og:image" content="assets/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="assets/img/devshuora-mark.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Naskh+Arabic:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=2">
+<link rel="preload" as="image" href="assets/img/hero.webp" type="image/webp">
+<script>document.documentElement.classList.remove('no-js');</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Devshuora Digital Khata",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web, Android, iOS, Windows",
+  "description": "Digital khata for shops: udhaar, bills, purchases, stock, cash book and profit reports in Urdu, Sindhi, Roman Urdu and English.",
+  "offers": { "@type": "AggregateOffer", "priceCurrency": "PKR", "lowPrice": "999", "highPrice": "3499", "offerCount": "4" },
+  "publisher": { "@type": "Organization", "name": "Devshuora Solutions", "url": "https://devshuora.org", "email": "info@devshuora.org", "telephone": "+92 341 2149161" }
+}
+</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><path d="M9 7h7M9 11h5"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+  <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1z"/><path d="M8 7h8M8 11h8M8 15h5"/></symbol>
+  <symbol id="i-printer" viewBox="0 0 24 24"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6z"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96 12 12.01l8.73-5.05M12 22.08V12"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/></symbol>
+  <symbol id="i-expense" viewBox="0 0 24 24"><path d="M23 18l-9.5-9.5-5 5L1 6"/><path d="M17 18h6v-6"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9M13 17V5M8 17v-3"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-usercheck" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M17 11l2 2 4-4"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+  <symbol id="i-restore" viewBox="0 0 24 24"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M12 18v-6M9 15l3-3 3 3"/></symbol>
+  <symbol id="i-offline" viewBox="0 0 24 24"><path d="M1 1l22 22M16.72 11.06A10.94 10.94 0 0 1 19 12.55M5 12.55a10.94 10.94 0 0 1 5.17-2.39M10.71 5.05A16 16 0 0 1 22.58 9M1.42 9a15.91 15.91 0 0 1 4.7-2.88M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24"><path d="M3 9l1.5-5h15L21 9"/><path d="M3 9v11a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V9M3 9h18"/><path d="M9 21v-6h6v6"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-activity" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></symbol>
+  <symbol id="i-fish" viewBox="0 0 24 24"><path d="M6.5 12c.94-3.46 4.94-6 8.5-6 3.56 0 6.06 2.54 7 6-.94 3.47-3.44 6-7 6s-7.56-2.53-8.5-6z"/><path d="M18 12v.5M7 10.67C7 8 5.58 5.97 2.73 5.5c-1 1.5-1 5 .23 6.5-1.24 1.5-1.24 5-.23 6.5C5.58 18.03 7 16 7 13.33"/></symbol>
+  <symbol id="i-pill" viewBox="0 0 24 24"><path d="M10.5 20.5 3.5 13.5a4.95 4.95 0 1 1 7-7l7 7a4.95 4.95 0 1 1-7 7z"/><path d="M8.5 8.5l7 7"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+  <symbol id="i-cake" viewBox="0 0 24 24"><path d="M20 21v-8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8"/><path d="M4 16s.5-1 2-1 2.5 2 4 2 2.5-2 4-2 2.5 2 4 2 2-1 2-1M2 21h20M7 8v3M12 8v3M17 8v3"/></symbol>
+  <symbol id="i-mobile" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+
+<header class="site-header" id="top">
+  <div class="wrap nav">
+
+    <!-- BRAND -->
+    <a class="brand" href="#top" aria-label="Devshuora Digital Khata home">
+      <img src="assets/img/devshuora-mark.png" alt="Devshuora" width="42" height="42">
+      <span class="brand-text">
+        <b>Dev<span>Shuora</span></b>
+        <small>Digital Khata</small>
+      </span>
+    </a>
+
+    <!-- NAVIGATION -->
+    <nav class="menu" id="menu" aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- ACTIONS -->
+    <div class="hero-premium-primary">
+      <a class="signin" href="#" data-signin hidden>
+        Sign in
+      </a>
+
+      <a
+        class="btn  btn-sm "
+        href="https://wa.me/923412149161?text=Assalam%20o%20Alaikum%2C%20I%20want%20a%20demo%20of%20Devshuora%20Digital%20Khata."
+        target="_blank"
+        rel="noopener"
+      >
+        <span>Book a free demo</span>
+        <svg class="ico nav-arrow" aria-hidden="true">
+          <use href="#i-arrow"/>
+        </svg>
+      </a>
+
+      <!-- MOBILE MENU -->
+      <button
+        class="burger"
+        type="button"
+        aria-controls="menu"
+        aria-expanded="false"
+        aria-label="Open menu"
+      >
+        <svg class="ico">
+          <use href="#i-menu"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+
+<main id="main">
+
+
+
+<!-- =========================================
+     HERO SECTION - PREMIUM VERSION
+========================================= -->
+
+<section class="hero hero-premium" id="home">
+
+  <!-- Background -->
+  <div class="hero-premium-bg">
+    <div class="hero-premium-grid"></div>
+    <div class="hero-premium-orb hero-orb-left"></div>
+    <div class="hero-premium-orb hero-orb-right"></div>
+  </div>
+
+  <div class="wrap hero-premium-container">
+
+    <!-- HERO CONTENT -->
+    <div class="hero-premium-content">
+
+      <!-- Eyebrow -->
+      <div class="hero-premium-eyebrow">
+        <span class="hero-eyebrow-dot"></span>
+        <span>DEVSHUORA DIGITAL KHATA</span>
+        <span class="hero-eyebrow-divider"></span>
+        <span class="hero-eyebrow-tag">Made for businesses</span>
+      </div>
+
+      <!-- Heading -->
+      <h1 class="hero-premium-heading">
+        Your business.
+        <span class="hero-heading-accent">Your accounts.</span>
+        <span class="hero-heading-gradient">All in one place.</span>
+      </h1>
+
+      <!-- Description -->
+      <p class="hero-premium-description">
+        From customer udhaar and daily sales to purchases,
+        stock and expenses — manage your shop with clarity
+        using one simple digital khata.
+      </p>
+
+      <!-- CTA -->
+      <div class="hero-premium-actions">
+
+        <a
+          class="hero-premium-primary"
+          href="https://wa.me/923412149161?text=Assalam%20o%20Alaikum%2C%20I%20want%20a%20demo%20of%20Devshuora%20Digital%20Khata."
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="hero-cta-icon">
+            <svg class="ico" aria-hidden="true">
+              <use href="#i-chat"/>
+            </svg>
+          </span>
+
+          <span>Book your free demo</span>
+
+          <svg class="ico hero-cta-arrow" aria-hidden="true">
+            <use href="#i-arrow"/>
+          </svg>
+        </a>
+
+        <a class="hero-premium-secondary" href="#features">
+          Discover features
+          <svg class="ico" aria-hidden="true">
+            <use href="#i-arrow"/>
+          </svg>
+        </a>
+
+      </div>
+
+      <!-- BENEFITS -->
+      <div class="hero-premium-benefits">
+
+        <div class="hero-premium-benefit">
+          <svg class="ico" aria-hidden="true">
+            <use href="#i-check"/>
+          </svg>
+          <span>14-day free trial</span>
+        </div>
+
+        <span class="hero-benefit-separator"></span>
+
+        <div class="hero-premium-benefit">
+          <svg class="ico" aria-hidden="true">
+            <use href="#i-mobile"/>
+          </svg>
+          <span>Any device</span>
+        </div>
+
+        <span class="hero-benefit-separator"></span>
+
+        <div class="hero-premium-benefit">
+          <svg class="ico" aria-hidden="true">
+            <use href="#i-offline"/>
+          </svg>
+          <span>Offline access</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- PRODUCT SHOWCASE -->
+    <div class="hero-premium-visual">
+
+      <!-- Decorative Rings -->
+      <div class="hero-visual-ring hero-ring-one"></div>
+      <div class="hero-visual-ring hero-ring-two"></div>
+
+      <!-- Main Image -->
+      <div class="hero-premium-image">
+
+        <div class="hero-premium-browser">
+
+          <div class="hero-browser-left">
+            <span class="hero-browser-dot red"></span>
+            <span class="hero-browser-dot yellow"></span>
+            <span class="hero-browser-dot green"></span>
+          </div>
+
+          <div class="hero-browser-title">
+            <span class="hero-browser-lock">
+              <svg class="ico" aria-hidden="true">
+                <use href="#i-lock"/>
+              </svg>
+            </span>
+            Digital Khata
+          </div>
+
+          <div class="hero-browser-right">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+        </div>
+
+        <picture>
+          <source srcset="assets/img/hero.webp" type="image/webp">
+          <img
+            src="assets/img/hero.jpg"
+            width="1800"
+            height="1057"
+            alt="Devshuora Digital Khata interface displayed on laptop and mobile"
+          >
+        </picture>
+
+      </div>
+
+      <!-- Floating Feature Card -->
+      <div class="hero-float-card hero-float-ledger">
+
+        <div class="hero-float-icon ledger-icon">
+          <svg class="ico" aria-hidden="true">
+            <use href="#i-book"/>
+          </svg>
+        </div>
+
+        <div class="hero-float-text">
+          <strong>Digital Khata</strong>
+          <span>Customer accounts</span>
+        </div>
+
+        <span class="hero-float-status">
+          <svg class="ico" aria-hidden="true">
+            <use href="#i-check"/>
+          </svg>
+        </span>
+
+      </div>
+
+      <!-- Floating Feature Card -->
+      <div class="hero-float-card hero-float-stock">
+
+        <div class="hero-float-icon stock-icon">
+          <svg class="ico" aria-hidden="true">
+            <use href="#i-box"/>
+          </svg>
+        </div>
+
+        <div class="hero-float-text">
+          <strong>Stock management</strong>
+          <span>Products & inventory</span>
+        </div>
+
+      </div>
+
+      <!-- Bottom Caption -->
+      <div class="hero-visual-caption">
+        <span class="hero-caption-line"></span>
+        <span>Everything your shop needs to stay organized.</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Bottom transition -->
+  <div class="hero-premium-bottom"></div>
+
+</section>
+
+
+<!-- Trust strip -->
+<section class="trust" aria-label="Highlights">
+  <ul class="wrap">
+    <li><span class="tile"><svg class="ico"><use href="#i-globe"/></svg></span>Urdu, Sindhi, Roman Urdu and English</li>
+    <li><span class="tile"><svg class="ico"><use href="#i-chat"/></svg></span>WhatsApp and SMS reminders</li>
+    <li><span class="tile"><svg class="ico"><use href="#i-offline"/></svg></span>Works offline, syncs later</li>
+    <li><span class="tile"><svg class="ico"><use href="#i-lock"/></svg></span>Owner-only profit and cash</li>
+  </ul>
+</section>
+
+
+<!-- =========================================
+     WHY DIGITAL KHATA — PREMIUM SECTION
+========================================= -->
+<section class="section alt why-premium" id="why">
+  <div class="wrap">
+
+    <!-- SECTION INTRO -->
+    <div class="why-intro reveal">
+
+      <span class="why-eyebrow">
+        <span class="why-eyebrow-dot"></span>
+        WHY DIGITAL KHATA
+      </span>
+
+      <h2>
+        Your shop deserves
+        <span>a smarter way</span>
+        to manage business.
+      </h2>
+
+      <p>
+        Running a shop is already hard work. Your accounts shouldn't make
+        it harder. Replace scattered registers and manual calculations
+        with one simple system built for everyday Pakistani businesses.
+      </p>
+
+      <div class="why-intro-note">
+        <svg class="ico"><use href="#i-check"/></svg>
+        <span>Less paperwork. More control. Clearer decisions.</span>
+      </div>
+
+    </div>
+
+
+    <!-- COMPARISON EXPERIENCE -->
+    <div class="why-experience reveal">
+
+      <!-- COLUMN HEADERS -->
+      <div class="why-columns">
+
+        <div class="why-column-label why-old-label">
+          <div class="why-label-icon">
+            <svg class="ico"><use href="#i-book"/></svg>
+          </div>
+
+          <div>
+            <span>THE TRADITIONAL WAY</span>
+            <h3>Paper Register</h3>
+          </div>
+        </div>
+
+        <div class="why-middle-label">
+          <span>VS</span>
+        </div>
+
+        <div class="why-column-label why-new-label">
+          <div class="why-label-icon">
+            <svg class="ico"><use href="#i-chart"/></svg>
+          </div>
+
+          <div>
+            <span>THE SMARTER WAY</span>
+            <h3>Digital Khata</h3>
+          </div>
+
+          <span class="why-recommended">SMART CHOICE</span>
+        </div>
+
+      </div>
+
+
+      <!-- COMPARISON CONTENT -->
+      <div class="why-comparison-list">
+
+        <!-- 01 UDHAAR -->
+        <article class="why-point">
+          <div class="why-old">
+            <span class="why-point-number">01</span>
+            <div>
+              <span class="why-mobile-tag">PAPER REGISTER</span>
+              <h4>Unclear customer balances</h4>
+              <p>
+                Udhaar gets forgotten, and customers may dispute
+                what they owe.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-connector">
+            <span></span>
+          </div>
+
+          <div class="why-new">
+            <div class="why-solution-icon">
+              <svg class="ico"><use href="#i-book"/></svg>
+            </div>
+            <div>
+              <span class="why-mobile-tag">DIGITAL KHATA</span>
+              <h4>Every balance accounted for</h4>
+              <p>
+                Keep customer balances, dated entries and
+                printable statements together.
+              </p>
+            </div>
+            <svg class="why-success"><use href="#i-check"/></svg>
+          </div>
+        </article>
+
+
+        <!-- 02 REMINDERS -->
+        <article class="why-point">
+          <div class="why-old">
+            <span class="why-point-number">02</span>
+            <div>
+              <span class="why-mobile-tag">PAPER REGISTER</span>
+              <h4>Delayed customer payments</h4>
+              <p>
+                Customers forget outstanding payments, making
+                follow-ups difficult.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-connector">
+            <span></span>
+          </div>
+
+          <div class="why-new">
+            <div class="why-solution-icon">
+              <svg class="ico"><use href="#i-chat"/></svg>
+            </div>
+            <div>
+              <span class="why-mobile-tag">DIGITAL KHATA</span>
+              <h4>Reminders in one tap</h4>
+              <p>
+                Send WhatsApp or SMS reminders with the exact
+                balance and payment details.
+              </p>
+            </div>
+            <svg class="why-success"><use href="#i-check"/></svg>
+          </div>
+        </article>
+
+
+        <!-- 03 CASH -->
+        <article class="why-point">
+          <div class="why-old">
+            <span class="why-point-number">03</span>
+            <div>
+              <span class="why-mobile-tag">PAPER REGISTER</span>
+              <h4>Confusing daily cash records</h4>
+              <p>
+                Cash in the drawer doesn't always match
+                the written calculations.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-connector">
+            <span></span>
+          </div>
+
+          <div class="why-new">
+            <div class="why-solution-icon">
+              <svg class="ico"><use href="#i-wallet"/></svg>
+            </div>
+            <div>
+              <span class="why-mobile-tag">DIGITAL KHATA</span>
+              <h4>A clearer picture of your cash</h4>
+              <p>
+                Track opening cash, money in, money out
+                and closing cash every day.
+              </p>
+            </div>
+            <svg class="why-success"><use href="#i-check"/></svg>
+          </div>
+        </article>
+
+
+        <!-- 04 PROFIT -->
+        <article class="why-point">
+          <div class="why-old">
+            <span class="why-point-number">04</span>
+            <div>
+              <span class="why-mobile-tag">PAPER REGISTER</span>
+              <h4>Uncertain business profit</h4>
+              <p>
+                Manual calculations make it difficult
+                to understand actual earnings.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-connector">
+            <span></span>
+          </div>
+
+          <div class="why-new">
+            <div class="why-solution-icon">
+              <svg class="ico"><use href="#i-chart"/></svg>
+            </div>
+            <div>
+              <span class="why-mobile-tag">DIGITAL KHATA</span>
+              <h4>Profit and loss visibility</h4>
+              <p>
+                Review profit and loss reports and item-wise
+                profit from bills, purchases and expenses.
+              </p>
+            </div>
+            <svg class="why-success"><use href="#i-check"/></svg>
+          </div>
+        </article>
+
+
+        <!-- 05 STOCK -->
+        <article class="why-point">
+          <div class="why-old">
+            <span class="why-point-number">05</span>
+            <div>
+              <span class="why-mobile-tag">PAPER REGISTER</span>
+              <h4>Unexpected stock shortages</h4>
+              <p>
+                Products run out before anyone notices
+                the missing inventory.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-connector">
+            <span></span>
+          </div>
+
+          <div class="why-new">
+            <div class="why-solution-icon">
+              <svg class="ico"><use href="#i-box"/></svg>
+            </div>
+            <div>
+              <span class="why-mobile-tag">DIGITAL KHATA</span>
+              <h4>Stock that stays updated</h4>
+              <p>
+                Update stock with every sale and purchase,
+                with low-stock alerts.
+              </p>
+            </div>
+            <svg class="why-success"><use href="#i-check"/></svg>
+          </div>
+        </article>
+
+
+        <!-- 06 STAFF -->
+        <article class="why-point">
+          <div class="why-old">
+            <span class="why-point-number">06</span>
+            <div>
+              <span class="why-mobile-tag">PAPER REGISTER</span>
+              <h4>Limited staff accountability</h4>
+              <p>
+                Changes to records can be difficult
+                to track and manage.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-connector">
+            <span></span>
+          </div>
+
+          <div class="why-new">
+            <div class="why-solution-icon">
+              <svg class="ico"><use href="#i-lock"/></svg>
+            </div>
+            <div>
+              <span class="why-mobile-tag">DIGITAL KHATA</span>
+              <h4>More controlled access</h4>
+              <p>
+                Restrict staff to the sales counter, log changes
+                and restore deleted entries.
+              </p>
+            </div>
+            <svg class="why-success"><use href="#i-check"/></svg>
+          </div>
+        </article>
+
+      </div>
+
+
+      <!-- BOTTOM MESSAGE -->
+      <div class="why-footer">
+
+        <div class="why-footer-content">
+          <div class="why-footer-icon">
+            <svg class="ico"><use href="#i-check"/></svg>
+          </div>
+
+          <div>
+            <span>THE DIGITAL KHATA ADVANTAGE</span>
+            <h3>Everything your shop needs. One clear system.</h3>
+            <p>
+              Spend less time managing records and more time
+              growing your business.
+            </p>
+          </div>
+        </div>
+
+        <a href="#features" class="why-footer-link">
+          Explore features
+          <svg class="ico"><use href="#i-arrow"/></svg>
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- =========================================
+     3. ALL FEATURES — DIGITAL KHATA
+========================================= -->
+<section class="section features-premium" id="features">
+  <div class="wrap">
+
+    <!-- Section Introduction -->
+    <div class="features-intro reveal">
+
+      <span class="features-eyebrow">
+        <span class="features-eyebrow-dot"></span>
+        EVERYTHING IN ONE PLACE
+      </span>
+
+      <h2>
+        One app.
+        <span>Every part of your business.</span>
+      </h2>
+
+      <p>
+        From the first customer entry to your end-of-day cash,
+        Digital Khata brings your daily shop operations together
+        in one connected system.
+      </p>
+
+      <div class="features-intro-points">
+        <span><svg class="ico"><use href="#i-check"/></svg>16 connected tools</span>
+        <span><svg class="ico"><use href="#i-check"/></svg>One simple system</span>
+        <span><svg class="ico"><use href="#i-check"/></svg>Built for everyday shops</span>
+      </div>
+
+    </div>
+
+
+    <!-- FEATURE CATEGORY 01 -->
+    <div class="feature-category reveal">
+
+      <div class="feature-category-heading">
+        <div class="feature-category-title">
+          <span class="feature-category-number">01</span>
+
+          <div>
+            <span class="feature-category-label">YOUR DAILY WORK</span>
+            <h3>Run your daily operations</h3>
+            <p>Handle customers, sales and billing without scattered records.</p>
+          </div>
+        </div>
+
+        <span class="feature-count">04 FEATURES</span>
+      </div>
+
+
+      <div class="feature-showcase-grid">
+
+        <article class="feature-showcase-card">
+          <div class="feature-card-top">
+            <span class="feature-icon feature-blue">
+              <svg class="ico"><use href="#i-book"/></svg>
+            </span>
+            <span class="feature-index">01</span>
+          </div>
+          <h4>Udhaar Khata</h4>
+          <p>
+            Maintain a separate khata for every customer, supplier
+            and bank account, with running balances.
+          </p>
+          <span class="feature-card-tag">CUSTOMER ACCOUNTS</span>
+        </article>
+
+        <article class="feature-showcase-card">
+          <div class="feature-card-top">
+            <span class="feature-icon feature-cyan">
+              <svg class="ico"><use href="#i-chat"/></svg>
+            </span>
+            <span class="feature-index">02</span>
+          </div>
+          <h4>WhatsApp & SMS Reminders</h4>
+          <p>
+            Send customers their outstanding balance and
+            payment details with one tap.
+          </p>
+          <span class="feature-card-tag">CUSTOMER FOLLOW-UPS</span>
+        </article>
+
+        <article class="feature-showcase-card">
+          <div class="feature-card-top">
+            <span class="feature-icon feature-indigo">
+              <svg class="ico"><use href="#i-receipt"/></svg>
+            </span>
+            <span class="feature-index">03</span>
+          </div>
+          <h4>Sales Counter & Bills</h4>
+          <p>
+            Select items or scan barcodes, enter weight in grams
+            and create bills quickly.
+          </p>
+          <span class="feature-card-tag">SALES MANAGEMENT</span>
+        </article>
+
+        <article class="feature-showcase-card">
+          <div class="feature-card-top">
+            <span class="feature-icon feature-violet">
+              <svg class="ico"><use href="#i-printer"/></svg>
+            </span>
+            <span class="feature-index">04</span>
+          </div>
+          <h4>Receipts & Printing</h4>
+          <p>
+            Generate A4 bills, 58 mm and 80 mm thermal receipts,
+            PDFs and WhatsApp shares.
+          </p>
+          <span class="feature-card-tag">BILLING & RECEIPTS</span>
+        </article>
+
+      </div>
+    </div>
+
+
+    <!-- FEATURE CATEGORY 02 -->
+    <div class="feature-category reveal">
+
+      <div class="feature-category-heading">
+        <div class="feature-category-title">
+          <span class="feature-category-number">02</span>
+
+          <div>
+            <span class="feature-category-label">YOUR BUSINESS NUMBERS</span>
+            <h3>Stay in control of money & stock</h3>
+            <p>Keep track of purchases, expenses, inventory and business performance.</p>
+          </div>
+        </div>
+
+        <span class="feature-count">05 FEATURES</span>
+      </div>
+
+
+      <div class="feature-showcase-grid">
+
+        <article class="feature-showcase-card">
+          <div class="feature-card-top">
+            <span class="feature-icon feature-orange">
+              <svg class="ico"><use href="#i-cart"/></svg>
+            </span>
+            <span class="feature-index">05</span>
+          </div>
+          <span class="feature-new-label">NEW</span>
+          <h4>Purchases</h4>
+          <p>
+            Record supplier bills item by item, with quantities,
+            units and purchase rates. Stock updates automatically.
+          </p>
+          <span class="feature-card-tag">SUPPLIER MANAGEMENT</span>
+        </article>
+
+        <article class="feature-showcase-card">
+          <div class="feature-card-top">
+            <span class="feature-icon feature-green">
+              <svg class="ico"><use href="#i-box"/></svg>
+            </span>
+            <span class="feature-index">06</span>
+          </div>
+          <h4>Stock Management</h4>
+          <p>
+            Manage product groups, units, photos, barcodes,
+            stock movement, wastage and low-stock alerts.
+          </p>
+          <span class="feature-card-tag">INVENTORY CONTROL</span>
+        </article>
+
+        <article class="feature-showcase-card">
+          <div class="feature-card-top">
+            <span class="feature-icon feature-blue">
+              <svg class="ico"><use href="#i-wallet"/></svg>
+            </span>
+            <span class="feature-index">07</span>
+          </div>
+          <h4>Cash Book</h4>
+          <p>
+            Track cash in and cash out by category,
+            including opening cash and daily cash in hand.
+          </p>
+          <span class="feature-card-tag">DAILY CASH TRACKING</span>
+        </article>
+
+        <article class="feature-showcase-card">
+          <div class="feature-card-top">
+            <span class="feature-icon feature-rose">
+              <svg class="ico"><use href="#i-expense"/></svg>
+            </span>
+            <span class="feature-index">08</span>
+          </div>
+          <h4>Expenses</h4>
+          <p>
+            Record rent, electricity, transport and other costs.
+            Counter staff can add daily small expenses.
+          </p>
+          <span class="feature-card-tag">EXPENSE TRACKING</span>
+        </article>
+
+        <article class="feature-showcase-card">
+          <div class="feature-card-top">
+            <span class="feature-icon feature-purple">
+              <svg class="ico"><use href="#i-chart"/></svg>
+            </span>
+            <span class="feature-index">09</span>
+          </div>
+          <h4>Profit & Reports</h4>
+          <p>
+            Review profit and loss, item-wise profit,
+            payment and stock reports, and six-month charts.
+          </p>
+          <span class="feature-card-tag">BUSINESS INSIGHTS</span>
+        </article>
+
+      </div>
+    </div>
+
+
+    <!-- FEATURE CATEGORY 03 -->
+    <div class="feature-category reveal">
+
+      <div class="feature-category-heading">
+        <div class="feature-category-title">
+          <span class="feature-category-number">03</span>
+
+          <div>
+            <span class="feature-category-label">YOUR TEAM & RECORDS</span>
+            <h3>Manage people with confidence</h3>
+            <p>Organize your team, control access and keep important records protected.</p>
+          </div>
+        </div>
+
+        <span class="feature-count">04 FEATURES</span>
+      </div>
+
+
+      <div class="feature-showcase-grid">
+
+        <article class="feature-showcase-card">
+          <div class="feature-card-top">
+            <span class="feature-icon feature-indigo">
+              <svg class="ico"><use href="#i-users"/></svg>
+            </span>
+            <span class="feature-index">10</span>
+          </div>
+          <h4>Staff Book</h4>
+          <p>
+            Manage attendance, monthly, daily or hourly salaries,
+            advances and salary slips.
+          </p>
+          <span class="feature-card-tag">STAFF MANAGEMENT</span>
+        </article>
+
+        <article class="feature-showcase-card">
+          <div class="feature-card-top">
+            <span class="feature-icon feature-cyan">
+              <svg class="ico"><use href="#i-usercheck"/></svg>
+            </span>
+            <span class="feature-index">11</span>
+          </div>
+          <h4>Team Logins</h4>
+          <p>
+            Give owners, managers and staff separate logins,
+            each with role-based access.
+          </p>
+          <span class="feature-card-tag">ROLE MANAGEMENT</span>
+        </article>
+
+        <article class="feature-showcase-card">
+          <div class="feature-card-top">
+            <span class="feature-icon feature-green">
+              <svg class="ico"><use href="#i-lock"/></svg>
+            </span>
+            <span class="feature-index">12</span>
+          </div>
+          <h4>App Lock & Security</h4>
+          <p>
+            Use PIN and fingerprint or face unlock,
+            signed-in device management and activity logs.
+          </p>
+          <span class="feature-card-tag">ACCOUNT SECURITY</span>
+        </article>
+
+        <article class="feature-showcase-card">
+          <div class="feature-card-top">
+            <span class="feature-icon feature-orange">
+              <svg class="ico"><use href="#i-restore"/></svg>
+            </span>
+            <span class="feature-index">13</span>
+          </div>
+          <h4>Recycle Bin</h4>
+          <p>
+            Recover deleted entries, bills, products
+            and expenses when needed.
+          </p>
+          <span class="feature-card-tag">RECORD RECOVERY</span>
+        </article>
+
+      </div>
+    </div>
+
+
+    <!-- FEATURE CATEGORY 04 -->
+    <div class="feature-category reveal">
+
+      <div class="feature-category-heading">
+        <div class="feature-category-title">
+          <span class="feature-category-number">04</span>
+
+          <div>
+            <span class="feature-category-label">FLEXIBLE BY DESIGN</span>
+            <h3>Fits the way your business works</h3>
+            <p>Use your system across different devices, businesses and languages.</p>
+          </div>
+        </div>
+
+        <span class="feature-count">03 FEATURES</span>
+      </div>
+
+
+      <div class="feature-showcase-grid">
+
+        <article class="feature-showcase-card">
+          <div class="feature-card-top">
+            <span class="feature-icon feature-green">
+              <svg class="ico"><use href="#i-offline"/></svg>
+            </span>
+            <span class="feature-index">14</span>
+          </div>
+          <h4>Works Offline</h4>
+          <p>
+            Create bills and entries without internet.
+            Your changes upload automatically when you're back online.
+          </p>
+          <span class="feature-card-tag">OFFLINE ACCESS</span>
+        </article>
+
+        <article class="feature-showcase-card">
+          <div class="feature-card-top">
+            <span class="feature-icon feature-blue">
+              <svg class="ico"><use href="#i-store"/></svg>
+            </span>
+            <span class="feature-index">15</span>
+          </div>
+          <h4>Multiple Businesses</h4>
+          <p>
+            Manage up to three businesses or branches
+            under one login, each with separate data.
+          </p>
+          <span class="feature-card-tag">MULTI-BUSINESS</span>
+        </article>
+
+        <article class="feature-showcase-card">
+          <div class="feature-card-top">
+            <span class="feature-icon feature-violet">
+              <svg class="ico"><use href="#i-globe"/></svg>
+            </span>
+            <span class="feature-index">16</span>
+          </div>
+          <h4>Four Languages</h4>
+          <p>
+            Use English, Urdu, Sindhi or Roman Urdu,
+            with right-to-left support and dark mode.
+          </p>
+          <span class="feature-card-tag">YOUR PREFERRED LANGUAGE</span>
+        </article>
+
+      </div>
+    </div>
+
+
+    <!-- CLOSING STRIP -->
+    <div class="features-closing reveal">
+
+      <div class="features-closing-content">
+        <span class="features-closing-icon">
+          <svg class="ico"><use href="#i-check"/></svg>
+        </span>
+
+        <div>
+          <span class="features-closing-label">ONE CONNECTED SYSTEM</span>
+          <h3>One entry can update your whole business.</h3>
+          <p>
+            A sale can update your bill, customer khata,
+            stock and cash records together.
+          </p>
+        </div>
+      </div>
+
+      <a href="#how" class="features-closing-link">
+        See how it works
+        <svg class="ico"><use href="#i-arrow"/></svg>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- 4. Feature Details -->
+<section class="section feature-details-premium" id="feature-details" aria-label="Explore Digital Khata features">
+  <div class="wrap">
+
+    <!-- Section Heading -->
+    <div class="fd-heading reveal">
+      <span class="kicker">A closer look</span>
+      <h2>Everything your shop does.<br><span>One connected system.</span></h2>
+      <p>Explore how Digital Khata simplifies everyday tasks, connects your business records and helps you stay in control.</p>
+    </div>
+
+    <div class="fd-list">
+
+      <!-- 01: Udhaar Khata -->
+      <article class="fd-row reveal">
+        <div class="fd-content">
+          <div class="fd-meta"><span>01</span><i></i> Customer accounts</div>
+          <h3>Every customer has a khata. The balance is always right.</h3>
+          <p>Record "You gave" or "You got" in one tap. Digital Khata maintains each running balance, so there is no adding up at night and no confusion about amounts.</p>
+          <ul class="fd-points">
+            <li><svg class="ico"><use href="#i-check"/></svg>Separate khatas for customers, suppliers and bank accounts</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Opening balances, collection dates and a daily collection list</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Statements for any date range, printable or downloadable as PDF</li>
+          </ul>
+        </div>
+        <div class="fd-visual">
+          <div class="fd-image">
+            <picture>
+              <source srcset="assets/img/khata-phone-in-hand.webp" type="image/webp">
+              <img src="assets/img/khata-phone-in-hand.jpg" width="1200" height="1226" loading="lazy" alt="Phone showing a customer khata with a WhatsApp reminder button">
+            </picture>
+          </div>
+          <span class="fd-image-caption">Customer khata · Running balance</span>
+        </div>
+      </article>
+
+      <!-- 02: Reminders -->
+      <article class="fd-row fd-reverse reveal">
+        <div class="fd-content">
+          <div class="fd-meta"><span>02</span><i></i> Payment reminders</div>
+          <h3>Get your money back faster.</h3>
+          <p>Send a polite reminder with the exact balance and your Easypaisa or JazzCash number. It takes one tap, and your customer receives the right amount.</p>
+          <ul class="fd-points">
+            <li><svg class="ico"><use href="#i-check"/></svg>WhatsApp reminders, SMS reminders or direct calls from the khata</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Collection dates on the dashboard and in morning notifications</li>
+          </ul>
+        </div>
+        <div class="fd-visual">
+          <div class="fd-image">
+            <picture>
+              <source srcset="assets/img/khata-laptop.webp" type="image/webp">
+              <img src="assets/img/khata-laptop.jpg" width="1400" height="859" loading="lazy" alt="Laptop showing customer khata with SMS and WhatsApp reminder buttons">
+            </picture>
+          </div>
+          <span class="fd-image-caption">Reminders · Faster collections</span>
+        </div>
+      </article>
+
+      <!-- 03: Sales Counter -->
+      <article class="fd-row reveal">
+        <div class="fd-content">
+          <div class="fd-meta"><span>03</span><i></i> Sales counter</div>
+          <h3>A bill in seconds, at the counter or on your phone.</h3>
+          <p>Tap item tiles or scan a barcode, enter the weight in grams and choose how the customer paid. Any unpaid amount can be added to the customer's khata.</p>
+          <ul class="fd-points">
+            <li><svg class="ico"><use href="#i-check"/></svg>Barcode scanning with a phone camera or scanner gun</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Enter 1200g and calculate it as 1.2 kg at the per-kg rate</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Cash, bank, Easypaisa or JazzCash, with discounts, tax and part payments</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Month-wise dues on bills and photo proof from the camera</li>
+          </ul>
+        </div>
+        <div class="fd-visual">
+          <div class="fd-image">
+            <picture>
+              <source srcset="assets/img/sales-counter-laptop.webp" type="image/webp">
+              <img src="assets/img/sales-counter-laptop.jpg" width="1400" height="859" loading="lazy" alt="Laptop showing sales counter items, payment methods and totals">
+            </picture>
+          </div>
+          <span class="fd-image-caption">Sales counter · Quick billing</span>
+        </div>
+      </article>
+
+      <!-- 04: Receipts and Stock -->
+      <article class="fd-row fd-reverse reveal">
+        <div class="fd-content">
+          <div class="fd-meta"><span>04</span><i></i> Receipts & stock</div>
+          <h3>Print the bill. Stock updates itself.</h3>
+          <p>Every bill can be printed as an A4 invoice or a 58 mm or 80 mm thermal receipt with your shop name and payment details. Sold items are deducted from stock at the same time.</p>
+          <ul class="fd-points">
+            <li><svg class="ico"><use href="#i-check"/></svg>PDF downloads, WhatsApp sharing and paid-bill reprints</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Units such as kg, dozen, litre and carton, with photos and barcodes</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Low-stock alerts, stock value and date-wise stock reports</li>
+          </ul>
+        </div>
+        <div class="fd-visual">
+          <div class="fd-image">
+            <picture>
+              <source srcset="assets/img/bill-receipt-stock.webp" type="image/webp">
+              <img src="assets/img/bill-receipt-stock.jpg" width="1400" height="982" loading="lazy" alt="Three phones showing a new bill, thermal receipt and stock list">
+            </picture>
+          </div>
+          <span class="fd-image-caption">Billing & inventory · Connected records</span>
+        </div>
+      </article>
+
+      <!-- 05: Purchases -->
+      <article class="fd-row reveal">
+        <div class="fd-content">
+          <div class="fd-meta"><span>05</span><i></i> Purchases <span class="fd-new">NEW</span></div>
+          <h3>Buy from suppliers item by item. Stock and khata update themselves.</h3>
+          <p>Enter the supplier's bill once, including each item's quantity, unit and purchase rate. Digital Khata adds the items to stock, records the supplier's bill and payment in their khata, and updates the cash book.</p>
+          <ul class="fd-points">
+            <li><svg class="ico"><use href="#i-check"/></svg>Cash purchases and quick supplier creation</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Item-wise view of quantities bought, average rate, sold and remaining stock</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Supplier-wise view of purchases, payments and outstanding balance</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Supplier bill photos and saved latest purchase rates</li>
+          </ul>
+        </div>
+        <div class="fd-visual">
+          <div class="fd-image">
+            <picture>
+              <source srcset="assets/img/purchases.webp" type="image/webp">
+              <img src="assets/img/purchases.jpg" width="1400" height="741" loading="lazy" alt="Laptop showing item-wise purchases and phone showing a purchase bill">
+            </picture>
+          </div>
+          <span class="fd-image-caption">Purchases · Supplier management</span>
+        </div>
+      </article>
+
+      <!-- 06: Profit and Reports -->
+      <article class="fd-row fd-reverse reveal">
+        <div class="fd-content">
+          <div class="fd-meta"><span>06</span><i></i> Profit & reports</div>
+          <h3>See your real profit, item by item.</h3>
+          <p>Understand your profit and loss for any period, along with the profit and margin on every item, calculated from your purchases and sales.</p>
+          <ul class="fd-points">
+            <li><svg class="ico"><use href="#i-check"/></svg>Item-wise cost, sales, profit, margin and wastage</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Today's and this month's sales on the owner's dashboard</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>Transaction, payment and staff reports with six-month charts</li>
+          </ul>
+        </div>
+        <div class="fd-visual">
+          <div class="fd-image">
+            <picture>
+              <source srcset="assets/img/profit-reports.webp" type="image/webp">
+              <img src="assets/img/profit-reports.jpg" width="1400" height="741" loading="lazy" alt="Laptop showing item-wise profit and phone showing profit and loss">
+            </picture>
+          </div>
+          <span class="fd-image-caption">Reports · Business performance</span>
+        </div>
+      </article>
+
+      <!-- 07: Language and Offline -->
+      <article class="fd-row reveal">
+        <div class="fd-content">
+          <div class="fd-meta"><span>07</span><i></i> Language & accessibility</div>
+          <h3>Works in your language, even without internet.</h3>
+          <p>Use Digital Khata in English, Urdu, Sindhi or Roman Urdu, and switch whenever you need. If the internet goes down, keep billing; your data uploads when you're back online.</p>
+          <ul class="fd-points">
+            <li><svg class="ico"><use href="#i-check"/></svg>Open it in your browser and install it on your home screen like an app</li>
+            <li><svg class="ico"><use href="#i-check"/></svg>One login for up to three businesses or branches</li>
+          </ul>
+        </div>
+        <div class="fd-visual">
+          <div class="fd-image">
+            <picture>
+              <source srcset="assets/img/languages.webp" type="image/webp">
+              <img src="assets/img/languages.jpg" width="1400" height="986" loading="lazy" alt="Three phones showing the same dashboard in English, Urdu and Sindhi">
+            </picture>
+          </div>
+          <span class="fd-image-caption">Four languages · Flexible access</span>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Additional Benefits -->
+    <div class="fd-extra-heading reveal">
+      <span class="kicker">More control, less confusion</span>
+      <h2>The details that keep your business running.</h2>
+    </div>
+
+    <div class="fd-extra-grid">
+
+      <!-- Cash Book -->
+      <article class="fd-extra-card reveal">
+        <div class="fd-extra-icon"><svg class="ico"><use href="#i-wallet"/></svg></div>
+        <span class="fd-extra-label">Daily cash management</span>
+        <h3>The cash drawer matches, every night.</h3>
+        <p>Track opening cash, cash in, cash out and cash in hand every day. Keep expenses such as rent and electricity in their own accounts.</p>
+        <ul class="fd-points">
+          <li><svg class="ico"><use href="#i-check"/></svg>Counter staff can add daily expenses, with the owner able to see who added them</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Day-wise cash statements and PDF downloads</li>
+        </ul>
+      </article>
+
+      <!-- Staff Management -->
+      <article class="fd-extra-card reveal">
+        <div class="fd-extra-icon"><svg class="ico"><use href="#i-usercheck"/></svg></div>
+        <span class="fd-extra-label">Staff & permissions</span>
+        <h3>Your staff sell. Your profit stays with you.</h3>
+        <p>Give staff their own login for the sales counter. Purchase prices, the cash book and reports remain restricted to the owner.</p>
+        <ul class="fd-points">
+          <li><svg class="ico"><use href="#i-check"/></svg>Owner, manager and staff roles, plus attendance, salary and advances</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>App lock with PIN, fingerprint or face unlock</li>
+        </ul>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- 6. How It Works -->
+<section class="section how-premium" id="how">
+  <div class="wrap">
+
+    <div class="how-heading reveal">
+      <span class="kicker">Getting started</span>
+      <h2>Your shop goes digital in <span>three simple steps.</span></h2>
+      <p>No complicated setup. We'll help you get started, organize your records and begin managing your business with confidence.</p>
+    </div>
+
+    <div class="how-layout">
+
+      <!-- Left: Steps -->
+      <div class="how-process">
+
+        <article class="how-step reveal">
+          <div class="how-step-number">
+            <span>01</span>
+          </div>
+
+          <div class="how-step-content">
+            <span class="how-step-label">First, let's connect</span>
+            <h3>Call or WhatsApp Devshuora.</h3>
+            <p>Contact our team and we'll create your shop account and send you your login details, including a 14-day free trial.</p>
+            <span class="how-step-note">
+              <svg class="ico"><use href="#i-check"/></svg>
+              Your account, ready to go
+            </span>
+          </div>
+        </article>
+
+        <article class="how-step reveal">
+          <div class="how-step-number">
+            <span>02</span>
+          </div>
+
+          <div class="how-step-content">
+            <span class="how-step-label">Set up your business</span>
+            <h3>Add your customers, suppliers and stock.</h3>
+            <p>Enter your existing udhaar balances, add your products and set their prices. Your digital records are ready to use.</p>
+            <span class="how-step-note">
+              <svg class="ico"><use href="#i-check"/></svg>
+              Your business records organized
+            </span>
+          </div>
+        </article>
+
+        <article class="how-step reveal">
+          <div class="how-step-number">
+            <span>03</span>
+          </div>
+
+          <div class="how-step-content">
+            <span class="how-step-label">You're ready</span>
+            <h3>Start billing and manage with clarity.</h3>
+            <p>Create bills, send payment reminders and keep an eye on your cash, stock and profit every day.</p>
+            <span class="how-step-note">
+              <svg class="ico"><use href="#i-check"/></svg>
+              Your shop, under control
+            </span>
+          </div>
+        </article>
+
+        <div class="how-action reveal">
+          <a class="btn btn-navy" href="https://wa.me/923412149161?text=Assalam%20o%20Alaikum%2C%20I%20want%20a%20demo%20of%20Devshuora%20Digital%20Khata."
+             target="_blank" rel="noopener">
+            <svg class="ico"><use href="#i-chat"/></svg>
+            Book your free demo
+          </a>
+          <span>Start with a 14-day free trial</span>
+        </div>
+
+      </div>
+
+      <!-- Right: Product visual -->
+      <div class="how-showcase reveal">
+
+        <div class="how-showcase-top">
+          <div>
+            <span class="how-live-dot"></span>
+            <span>YOUR BUSINESS, SIMPLIFIED</span>
+          </div>
+          <span class="how-showcase-tag">Digital Khata</span>
+        </div>
+
+        <div class="how-showcase-image">
+          <picture>
+            <source srcset="assets/img/new-bill-phone-in-hand.webp" type="image/webp">
+            <img src="assets/img/new-bill-phone-in-hand.jpg"
+                 width="1200" height="1198"
+                 loading="lazy"
+                 alt="Phone showing the new bill screen in Devshuora Digital Khata">
+          </picture>
+        </div>
+
+        <div class="how-showcase-bottom">
+          <div class="how-showcase-icon">
+            <svg class="ico"><use href="#i-check"/></svg>
+          </div>
+          <div>
+            <strong>Ready for your next sale?</strong>
+            <span>Manage your daily business from one place.</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- 7. Who It Is For -->
+<section class="section who-premium" id="who">
+  <div class="wrap">
+
+    <!-- Section Heading -->
+    <div class="who-heading reveal">
+      <span class="kicker">Built for everyday businesses</span>
+      <h2>One solution. <span>Different kinds of shops.</span></h2>
+      <p>From neighborhood grocery stores to busy wholesalers, Digital Khata adapts to the way your business works.</p>
+    </div>
+
+    <!-- Business Categories -->
+    <div class="who-grid">
+
+      <!-- 01 Grocery -->
+      <article class="who-card reveal">
+        <div class="who-card-top">
+          <span class="who-number">01</span>
+          <div class="who-icon">
+            <svg class="ico"><use href="#i-bag"/></svg>
+          </div>
+        </div>
+        <div class="who-card-content">
+          <span class="who-category">Retail & essentials</span>
+          <h3>Kiryana & Grocery</h3>
+          <p>Manage customer udhaar, daily sales, stock and supplier purchases in one place.</p>
+        </div>
+        <div class="who-tags">
+          <span>Udhaar</span>
+          <span>Stock</span>
+          <span>Sales</span>
+        </div>
+      </article>
+
+      <!-- 02 Fish -->
+      <article class="who-card reveal">
+        <div class="who-card-top">
+          <span class="who-number">02</span>
+          <div class="who-icon">
+            <svg class="ico"><use href="#i-fish"/></svg>
+          </div>
+        </div>
+        <div class="who-card-content">
+          <span class="who-category">Fresh food & seafood</span>
+          <h3>Fish Shops</h3>
+          <p>Handle weight-based sales, per-kg rates, ready-made fish groups and daily cash.</p>
+        </div>
+        <div class="who-tags">
+          <span>Weight</span>
+          <span>Rates</span>
+          <span>Cash book</span>
+        </div>
+      </article>
+
+      <!-- 03 Pharmacy -->
+      <article class="who-card reveal">
+        <div class="who-card-top">
+          <span class="who-number">03</span>
+          <div class="who-icon">
+            <svg class="ico"><use href="#i-pill"/></svg>
+          </div>
+        </div>
+        <div class="who-card-content">
+          <span class="who-category">Healthcare retail</span>
+          <h3>Pharmacies</h3>
+          <p>Keep product records organized with barcode-based stock management and low-stock alerts.</p>
+        </div>
+        <div class="who-tags">
+          <span>Barcodes</span>
+          <span>Inventory</span>
+          <span>Alerts</span>
+        </div>
+      </article>
+
+      <!-- 04 Hardware -->
+      <article class="who-card reveal">
+        <div class="who-card-top">
+          <span class="who-number">04</span>
+          <div class="who-icon">
+            <svg class="ico"><use href="#i-wrench"/></svg>
+          </div>
+        </div>
+        <div class="who-card-content">
+          <span class="who-category">Tools & materials</span>
+          <h3>Hardware Stores</h3>
+          <p>Manage different product units, supplier accounts and item-wise purchases with ease.</p>
+        </div>
+        <div class="who-tags">
+          <span>Units</span>
+          <span>Suppliers</span>
+          <span>Purchases</span>
+        </div>
+      </article>
+
+      <!-- 05 Bakery -->
+      <article class="who-card reveal">
+        <div class="who-card-top">
+          <span class="who-number">05</span>
+          <div class="who-icon">
+            <svg class="ico"><use href="#i-cake"/></svg>
+          </div>
+        </div>
+        <div class="who-card-content">
+          <span class="who-category">Food & bakery</span>
+          <h3>Bakeries</h3>
+          <p>Track daily cash, business expenses and staff records without paper registers.</p>
+        </div>
+        <div class="who-tags">
+          <span>Cash book</span>
+          <span>Expenses</span>
+          <span>Staff</span>
+        </div>
+      </article>
+
+      <!-- 06 Mobile -->
+      <article class="who-card reveal">
+        <div class="who-card-top">
+          <span class="who-number">06</span>
+          <div class="who-icon">
+            <svg class="ico"><use href="#i-mobile"/></svg>
+          </div>
+        </div>
+        <div class="who-card-content">
+          <span class="who-category">Technology retail</span>
+          <h3>Mobile Shops</h3>
+          <p>Use barcode scanning, itemized bills, photo proof and flexible part payments.</p>
+        </div>
+        <div class="who-tags">
+          <span>Barcodes</span>
+          <span>Billing</span>
+          <span>Payments</span>
+        </div>
+      </article>
+
+      <!-- 07 Wholesale -->
+      <article class="who-card reveal">
+        <div class="who-card-top">
+          <span class="who-number">07</span>
+          <div class="who-icon">
+            <svg class="ico"><use href="#i-truck"/></svg>
+          </div>
+        </div>
+        <div class="who-card-content">
+          <span class="who-category">Bulk distribution</span>
+          <h3>Wholesalers</h3>
+          <p>Manage multiple customer khatas, payment reminders, statements and supplier bills.</p>
+        </div>
+        <div class="who-tags">
+          <span>Khata</span>
+          <span>Reminders</span>
+          <span>Reports</span>
+        </div>
+      </article>
+
+      <!-- 08 Multiple branches -->
+      <article class="who-card reveal">
+        <div class="who-card-top">
+          <span class="who-number">08</span>
+          <div class="who-icon">
+            <svg class="ico"><use href="#i-store"/></svg>
+          </div>
+        </div>
+        <div class="who-card-content">
+          <span class="who-category">Growing businesses</span>
+          <h3>Shops with Branches</h3>
+          <p>Manage up to three businesses on one login, with separate logins for each counter.</p>
+        </div>
+        <div class="who-tags">
+          <span>Multi-business</span>
+          <span>Team access</span>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Bottom message -->
+    <div class="who-bottom reveal">
+      <div class="who-bottom-icon">
+        <svg class="ico"><use href="#i-store"/></svg>
+      </div>
+      <div>
+        <strong>Don't see your type of shop?</strong>
+        <p>If your business manages sales, stock, purchases or customer accounts, Digital Khata may be a good fit.</p>
+      </div>
+      <a href="https://wa.me/923412149161?text=Assalam%20o%20Alaikum%2C%20I%20want%20to%20know%20if%20Digital%20Khata%20is%20suitable%20for%20my%20business."
+         target="_blank" rel="noopener">
+        Talk to our team
+        <svg class="ico"><use href="#i-arrow"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- 8. Safe and Private -->
+<section class="section security-premium" id="security">
+  <div class="wrap">
+
+    <!-- Section Heading -->
+    <div class="security-heading reveal">
+      <span class="kicker">Your business. Your control.</span>
+      <h2>Your hisaab stays <span>yours.</span></h2>
+      <p>Your business records deserve privacy. Digital Khata gives you control over access, activity and the information your team can see.</p>
+    </div>
+
+    <div class="security-layout">
+
+      <!-- Left: Security Features -->
+      <div class="security-features">
+
+        <div class="security-side-heading">
+          <span>01 / DATA PROTECTION</span>
+          <h3>Built around your privacy.</h3>
+        </div>
+
+        <!-- Feature 1 -->
+        <article class="security-item reveal">
+          <div class="security-icon">
+            <svg class="ico"><use href="#i-shield"/></svg>
+          </div>
+          <div class="security-item-content">
+            <h4>Separate data for every shop</h4>
+            <p>Each shop has its own records. Other shops cannot see your customers, bills or stock.</p>
+          </div>
+          <span class="security-check"><svg class="ico"><use href="#i-check"/></svg></span>
+        </article>
+
+        <!-- Feature 2 -->
+        <article class="security-item reveal">
+          <div class="security-icon">
+            <svg class="ico"><use href="#i-lock"/></svg>
+          </div>
+          <div class="security-item-content">
+            <h4>App lock and device control</h4>
+            <p>Protect access with a PIN, fingerprint or face unlock. Review signed-in devices and sign out other devices.</p>
+          </div>
+          <span class="security-check"><svg class="ico"><use href="#i-check"/></svg></span>
+        </article>
+
+        <!-- Feature 3 -->
+        <article class="security-item reveal">
+          <div class="security-icon">
+            <svg class="ico"><use href="#i-activity"/></svg>
+          </div>
+          <div class="security-item-content">
+            <h4>Activity log</h4>
+            <p>Changes and deleted entries are recorded, including who made the change and when.</p>
+          </div>
+          <span class="security-check"><svg class="ico"><use href="#i-check"/></svg></span>
+        </article>
+
+        <!-- Feature 4 -->
+        <article class="security-item reveal">
+          <div class="security-icon">
+            <svg class="ico"><use href="#i-restore"/></svg>
+          </div>
+          <div class="security-item-content">
+            <h4>Recycle bin and recovery</h4>
+            <p>Restore deleted entries, bills, products and expenses when you need them again.</p>
+          </div>
+          <span class="security-check"><svg class="ico"><use href="#i-check"/></svg></span>
+        </article>
+
+        <!-- Feature 5 -->
+        <article class="security-item reveal">
+          <div class="security-icon">
+            <svg class="ico"><use href="#i-offline"/></svg>
+          </div>
+          <div class="security-item-content">
+            <h4>Keep working offline</h4>
+            <p>Entries made without internet are kept on your device and uploaded automatically when you're connected again.</p>
+          </div>
+          <span class="security-check"><svg class="ico"><use href="#i-check"/></svg></span>
+        </article>
+
+        <div class="security-note reveal">
+          <svg class="ico"><use href="#i-shield"/></svg>
+          <p><strong>Your business stays in your hands.</strong> You decide who gets access to important business information.</p>
+        </div>
+
+      </div>
+
+      <!-- Right: Role Permissions -->
+      <div class="security-roles reveal">
+
+        <div class="security-roles-heading">
+          <div>
+            <span class="security-section-label">02 / TEAM PERMISSIONS</span>
+            <h3>Who sees what?</h3>
+            <p>Different roles. Different levels of access.</p>
+          </div>
+          <div class="security-role-icon">
+            <svg class="ico"><use href="#i-usercheck"/></svg>
+          </div>
+        </div>
+
+        <div class="security-table-wrap">
+          <table class="security-table">
+            <thead>
+              <tr>
+                <th scope="col">Access & permissions</th>
+                <th scope="col">Owner</th>
+                <th scope="col">Manager</th>
+                <th scope="col">Staff</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Sales counter, bills and payments</td>
+                <td><span class="permission-yes" aria-label="Yes"><svg class="ico"><use href="#i-check"/></svg></span></td>
+                <td><span class="permission-yes" aria-label="Yes"><svg class="ico"><use href="#i-check"/></svg></span></td>
+                <td><span class="permission-yes" aria-label="Yes"><svg class="ico"><use href="#i-check"/></svg></span></td>
+              </tr>
+
+              <tr>
+                <td>Customers and suppliers (khata)</td>
+                <td><span class="permission-yes" aria-label="Yes"><svg class="ico"><use href="#i-check"/></svg></span></td>
+                <td><span class="permission-yes" aria-label="Yes"><svg class="ico"><use href="#i-check"/></svg></span></td>
+                <td><span class="permission-yes" aria-label="Yes"><svg class="ico"><use href="#i-check"/></svg></span></td>
+              </tr>
+
+              <tr>
+                <td>Stock, sale price and quantity</td>
+                <td><span class="permission-yes" aria-label="Yes"><svg class="ico"><use href="#i-check"/></svg></span></td>
+                <td><span class="permission-yes" aria-label="Yes"><svg class="ico"><use href="#i-check"/></svg></span></td>
+                <td><span class="permission-yes" aria-label="Yes"><svg class="ico"><use href="#i-check"/></svg></span></td>
+              </tr>
+
+              <tr>
+                <td>Add today's expenses</td>
+                <td><span class="permission-yes" aria-label="Yes"><svg class="ico"><use href="#i-check"/></svg></span></td>
+                <td><span class="permission-yes" aria-label="Yes"><svg class="ico"><use href="#i-check"/></svg></span></td>
+                <td><span class="permission-yes" aria-label="Yes"><svg class="ico"><use href="#i-check"/></svg></span></td>
+              </tr>
+
+              <tr>
+                <td>Edit or delete bills and entries</td>
+                <td><span class="permission-yes" aria-label="Yes"><svg class="ico"><use href="#i-check"/></svg></span></td>
+                <td><span class="permission-yes" aria-label="Yes"><svg class="ico"><use href="#i-check"/></svg></span></td>
+                <td><span class="permission-no" aria-label="No">—</span></td>
+              </tr>
+
+              <tr>
+                <td>Purchases, purchase prices and cash book</td>
+                <td><span class="permission-yes" aria-label="Yes"><svg class="ico"><use href="#i-check"/></svg></span></td>
+                <td><span class="permission-no" aria-label="No">—</span></td>
+                <td><span class="permission-no" aria-label="No">—</span></td>
+              </tr>
+
+              <tr>
+                <td>Profit and loss, all reports</td>
+                <td><span class="permission-yes" aria-label="Yes"><svg class="ico"><use href="#i-check"/></svg></span></td>
+                <td><span class="permission-no" aria-label="No">—</span></td>
+                <td><span class="permission-no" aria-label="No">—</span></td>
+              </tr>
+
+              <tr>
+                <td>Staff salary, settings and team</td>
+                <td><span class="permission-yes" aria-label="Yes"><svg class="ico"><use href="#i-check"/></svg></span></td>
+                <td><span class="permission-no" aria-label="No">—</span></td>
+                <td><span class="permission-no" aria-label="No">—</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="security-table-footer">
+          <span><i class="permission-dot"></i> Access available</span>
+          <span><i class="permission-dot permission-dot-muted"></i> Restricted access</span>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- 10. FAQ SECTION -->
+<section class="section faq-premium" id="faq">
+  <div class="wrap">
+
+    <!-- Section Heading -->
+    <div class="faq-heading reveal">
+      <span class="kicker">SUPPORT & GUIDANCE</span>
+
+      <h2>
+        Got questions?
+        <span>We've got answers.</span>
+      </h2>
+
+      <p>
+        Everything you need to know about Digital Khata,
+        from setting up your shop to managing your daily business.
+      </p>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="faq-layout">
+
+      <!-- FAQ Questions -->
+      <div class="faq-main">
+
+        <div class="faq-topline">
+          <span>FREQUENTLY ASKED QUESTIONS</span>
+          <span class="faq-count">10 QUESTIONS</span>
+        </div>
+
+        <div class="faq-list">
+
+          <details class="faq-item reveal" name="digital-khata-faq" open>
+            <summary>
+              <span class="faq-number">01</span>
+              <span class="faq-question">Do I need to download an app?</span>
+              <span class="faq-toggle">
+                <svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg>
+              </span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                No. Digital Khata opens in the browser on any phone, tablet
+                or laptop. You can add it to your home screen and use it
+                like an app.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal" name="digital-khata-faq">
+            <summary>
+              <span class="faq-number">02</span>
+              <span class="faq-question">Does it work without internet?</span>
+              <span class="faq-toggle">
+                <svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg>
+              </span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Yes. You can continue making bills and entries while offline.
+                They sync automatically when your internet connection returns.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal" name="digital-khata-faq">
+            <summary>
+              <span class="faq-number">03</span>
+              <span class="faq-question">Can I use it in Urdu or Sindhi?</span>
+              <span class="faq-toggle">
+                <svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg>
+              </span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Yes. Digital Khata supports English, Urdu, Sindhi and
+                Roman Urdu. You can switch between languages whenever
+                you need.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal" name="digital-khata-faq">
+            <summary>
+              <span class="faq-number">04</span>
+              <span class="faq-question">Can I add my old udhaar from the register?</span>
+              <span class="faq-toggle">
+                <svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg>
+              </span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Yes. When you add a customer or supplier, simply enter
+                their existing balance and continue managing their
+                account digitally.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal" name="digital-khata-faq">
+            <summary>
+              <span class="faq-number">05</span>
+              <span class="faq-question">Can my staff use it without seeing my profit?</span>
+              <span class="faq-toggle">
+                <svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg>
+              </span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Yes. Staff can have their own login with assigned permissions.
+                Sensitive information such as purchase prices, cash book
+                and reports can remain restricted to the owner.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal" name="digital-khata-faq">
+            <summary>
+              <span class="faq-number">06</span>
+              <span class="faq-question">Can it print bills?</span>
+              <span class="faq-toggle">
+                <svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg>
+              </span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Yes. You can print A4 invoices, 58 mm and 80 mm thermal
+                receipts, save bills as PDF and share them through WhatsApp.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal" name="digital-khata-faq">
+            <summary>
+              <span class="faq-number">07</span>
+              <span class="faq-question">Does Digital Khata take payments or hold my money?</span>
+              <span class="faq-toggle">
+                <svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg>
+              </span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                No. Digital Khata records payments made through cash,
+                bank, Easypaisa or JazzCash. It does not collect or hold
+                your money.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal" name="digital-khata-faq">
+            <summary>
+              <span class="faq-number">08</span>
+              <span class="faq-question">I have more than one shop. Do I need two accounts?</span>
+              <span class="faq-toggle">
+                <svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg>
+              </span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                No. One login can manage up to 3 businesses or branches,
+                with separate records for each.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal" name="digital-khata-faq">
+            <summary>
+              <span class="faq-number">09</span>
+              <span class="faq-question">What happens after the free trial?</span>
+              <span class="faq-toggle">
+                <svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg>
+              </span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                You can choose a suitable plan and continue using
+                Digital Khata. Your existing customers, bills and
+                stock records remain available according to your plan.
+              </p>
+            </div>
+          </details>
+
+          <details class="faq-item reveal" name="digital-khata-faq">
+            <summary>
+              <span class="faq-number">10</span>
+              <span class="faq-question">How do I get started?</span>
+              <span class="faq-toggle">
+                <svg class="ico" aria-hidden="true"><use href="#i-plus"/></svg>
+              </span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Call or WhatsApp
+                <a href="tel:+923412149161">+92 341 2149161</a>
+                or
+                <a href="tel:+923060317142">+92 306 0317142</a>,
+                or email
+                <a href="mailto:info@devshuora.org">info@devshuora.org</a>.
+                Our team will guide you through getting started.
+              </p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+
+      <!-- Support Card -->
+      <aside class="faq-contact reveal">
+
+        <div class="faq-contact-top">
+          <div class="faq-contact-icon">
+            <svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>
+          </div>
+          <span class="faq-contact-label">PERSONAL SUPPORT</span>
+        </div>
+
+        <h3>
+          Need a little
+          <span>help getting started?</span>
+        </h3>
+
+        <p class="faq-contact-description">
+          Have a question or need assistance? Talk directly with our team.
+          We're here to help you get started with Digital Khata.
+        </p>
+
+        <div class="faq-contact-divider"></div>
+
+        <div class="faq-contact-links">
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/923412149161"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="faq-contact-link">
+
+            <span class="faq-link-icon">
+              <svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>
+            </span>
+
+            <span class="faq-link-text">
+              <small>Chat with us on WhatsApp</small>
+              <strong>+92 341 2149161</strong>
+            </span>
+
+            <svg class="faq-link-arrow ico" aria-hidden="true">
+              <use href="#i-arrow"/>
+            </svg>
+          </a>
+
+          <!-- Phone -->
+          <a href="tel:+923060317142" class="faq-contact-link">
+
+            <span class="faq-link-icon">
+              <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>
+            </span>
+
+            <span class="faq-link-text">
+              <small>Speak with our team</small>
+              <strong>+92 306 0317142</strong>
+            </span>
+
+            <svg class="faq-link-arrow ico" aria-hidden="true">
+              <use href="#i-arrow"/>
+            </svg>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:info@devshuora.org" class="faq-contact-link">
+
+            <span class="faq-link-icon">
+              <svg class="ico" aria-hidden="true"><use href="#i-mail"/></svg>
+            </span>
+
+            <span class="faq-link-text">
+              <small>Send us an email</small>
+              <strong>info@devshuora.org</strong>
+            </span>
+
+            <svg class="faq-link-arrow ico" aria-hidden="true">
+              <use href="#i-arrow"/>
+            </svg>
+          </a>
+
+        </div>
+
+        <div class="faq-contact-bottom">
+          <span class="faq-status-dot"></span>
+          <span>Here to help you move your shop forward.</span>
+        </div>
+
+        <!-- Decorative Shape -->
+        <div class="faq-decoration" aria-hidden="true">
+          <svg class="ico"><use href="#i-chat"/></svg>
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- 11. CONTACT SECTION -->
+<section class="contact contact-premium" id="contact">
+  <div class="wrap">
+
+    <div class="contact-grid">
+
+      <!-- Left: Main CTA -->
+      <div class="contact-main reveal">
+
+        <span class="contact-eyebrow">
+          <span class="contact-eyebrow-dot"></span>
+          LET'S GET YOUR SHOP STARTED
+        </span>
+
+        <h2>
+          Ready to leave the
+          <span>paper register behind?</span>
+        </h2>
+
+        <p class="contact-description">
+          Take control of your shop's udhaar, sales, stock and daily
+          accounts. Talk to our team and get a free Digital Khata demo.
+        </p>
+
+        <div class="contact-actions">
+
+          <a class="btn contact-primary-btn"
+             href="https://wa.me/923412149161?text=Assalam%20o%20Alaikum%2C%20I%20want%20a%20demo%20of%20Devshuora%20Digital%20Khata."
+             target="_blank"
+             rel="noopener">
+
+            <svg class="ico"><use href="#i-chat"/></svg>
+            Book a free demo
+            <svg class="ico contact-btn-arrow"><use href="#i-arrow"/></svg>
+          </a>
+
+          <a class="btn contact-secondary-btn"
+             href="tel:+923412149161">
+
+            <svg class="ico"><use href="#i-phone"/></svg>
+            Call our team
+          </a>
+
+        </div>
+
+        <div class="contact-assurance">
+          <span>
+            <svg class="ico"><use href="#i-check"/></svg>
+            Personal guidance
+          </span>
+
+          <span>
+            <svg class="ico"><use href="#i-check"/></svg>
+            Easy setup
+          </span>
+
+          <span>
+            <svg class="ico"><use href="#i-check"/></svg>
+            Free demo
+          </span>
+        </div>
+
+      </div>
+
+      <!-- Right: Contact Information -->
+      <div class="contact-information reveal">
+
+        <div class="contact-info-heading">
+          <span>GET IN TOUCH</span>
+          <h3>We're just a message away.</h3>
+          <p>Choose the easiest way to reach our team.</p>
+        </div>
+
+        <div class="contact-cards">
+
+          <a class="ccard"
+             href="https://wa.me/923412149161"
+             target="_blank"
+             rel="noopener">
+
+            <span class="tile">
+              <svg class="ico"><use href="#i-chat"/></svg>
+            </span>
+
+            <span class="ccard-content">
+              <small>Phone / WhatsApp</small>
+              <b>+92 341 2149161</b>
+            </span>
+
+            <svg class="ico ccard-arrow"><use href="#i-arrow"/></svg>
+          </a>
+
+          <a class="ccard"
+             href="https://wa.me/923060317142"
+             target="_blank"
+             rel="noopener">
+
+            <span class="tile">
+              <svg class="ico"><use href="#i-chat"/></svg>
+            </span>
+
+            <span class="ccard-content">
+              <small>Phone / WhatsApp</small>
+              <b>+92 306 0317142</b>
+            </span>
+
+            <svg class="ico ccard-arrow"><use href="#i-arrow"/></svg>
+          </a>
+
+          <a class="ccard" href="mailto:info@devshuora.org">
+
+            <span class="tile">
+              <svg class="ico"><use href="#i-mail"/></svg>
+            </span>
+
+            <span class="ccard-content">
+              <small>Email</small>
+              <b>info@devshuora.org</b>
+            </span>
+
+            <svg class="ico ccard-arrow"><use href="#i-arrow"/></svg>
+          </a>
+
+          <a class="ccard"
+             href="https://devshuora.org"
+             target="_blank"
+             rel="noopener">
+
+            <span class="tile">
+              <svg class="ico"><use href="#i-globe"/></svg>
+            </span>
+
+            <span class="ccard-content">
+              <small>Official Website</small>
+              <b>devshuora.org</b>
+            </span>
+
+            <svg class="ico ccard-arrow"><use href="#i-arrow"/></svg>
+          </a>
+
+        </div>
+
+        <div class="contact-info-footer">
+          <span class="contact-status-dot"></span>
+          <span>Have a question? We're ready to help.</span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bottom Brand Message -->
+    <div class="contact-bottom reveal">
+      <span>DEVSHUORA DIGITAL KHATA</span>
+      <span>Less paperwork. More control. Better business.</span>
+    </div>
+
+  </div>
+</section>
+
+
+
+</main>
+
+
+<!-- =========================================
+     PREMIUM DIGITAL KHATA FOOTER
+========================================= -->
+
+<footer class="footer footer-premium" id="footer">
+
+  <!-- Background Effects -->
+  <div class="footer-glow footer-glow-one"></div>
+  <div class="footer-glow footer-glow-two"></div>
+
+  <div class="wrap">
+
+    <!-- Main Footer -->
+    <div class="footer-main">
+
+      <!-- Brand Column -->
+      <div class="foot-brand-column">
+
+        <a class="foot-brand" href="#top" aria-label="Digital Khata home">
+
+          <span class="foot-logo">
+            <img
+              src="assets/img/devshuora-mark.png"
+              alt="Devshuora logo"
+              width="46"
+              height="46"
+            >
+          </span>
+
+          <span class="foot-brand-name">
+            Dev<em>Shuora</em>
+            <small>Digital Khata</small>
+          </span>
+
+        </a>
+
+        <p class="foot-description">
+          Run your shop with confidence. Manage udhaar, sales,
+          purchases, stock and daily accounts — all in one place.
+          <strong>Built for Pakistani businesses.</strong>
+        </p>
+
+        <!-- Brand Highlights -->
+        <div class="foot-highlights">
+
+          <span>
+            <svg class="ico"><use href="#i-check"/></svg>
+            Simple to use
+          </span>
+
+          <span>
+            <svg class="ico"><use href="#i-check"/></svg>
+            Made for local shops
+          </span>
+
+        </div>
+
+        <!-- Company Website -->
+        <a
+          href="https://devshuora.org"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="foot-website-link"
+        >
+
+          <span class="foot-website-icon">
+            <svg class="ico"><use href="#i-globe"/></svg>
+          </span>
+
+          <span>Explore Devshuora Solutions</span>
+
+          <svg class="ico foot-website-arrow">
+            <use href="#i-arrow"/>
+          </svg>
+
+        </a>
+
+      </div>
+
+
+      <!-- Product Navigation -->
+      <div class="foot-column">
+
+        <span class="foot-column-kicker">EXPLORE</span>
+        <h4>Digital Khata</h4>
+
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="#why">Why Digital Khata</a></li>
+          <li><a href="#pricing">Plans & Pricing</a></li>
+          <li><a href="#faq">Frequently Asked Questions</a></li>
+
+          <li data-signin-item hidden>
+            <a href="#" data-signin>Sign In to Your Account</a>
+          </li>
+        </ul>
+
+      </div>
+
+
+      <!-- Contact Column -->
+      <div class="foot-column foot-contact-column">
+
+        <span class="foot-column-kicker">WE'RE HERE TO HELP</span>
+        <h4>Get in Touch</h4>
+
+        <p class="foot-contact-intro">
+          Have questions? Our team is ready to help you get started.
+        </p>
+
+        <div class="foot-contact-list">
+
+          <!-- Phone 1 -->
+          <a href="tel:+923412149161" class="foot-contact-item">
+
+            <span class="foot-contact-icon">
+              <svg class="ico"><use href="#i-phone"/></svg>
+            </span>
+
+            <span class="foot-contact-text">
+              <small>Call or WhatsApp</small>
+              <strong>+92 341 2149161</strong>
+            </span>
+
+            <svg class="ico foot-contact-arrow">
+              <use href="#i-arrow"/>
+            </svg>
+
+          </a>
+
+          <!-- Phone 2 -->
+          <a href="tel:+923060317142" class="foot-contact-item">
+
+            <span class="foot-contact-icon">
+              <svg class="ico"><use href="#i-phone"/></svg>
+            </span>
+
+            <span class="foot-contact-text">
+              <small>Contact our team</small>
+              <strong>+92 306 0317142</strong>
+            </span>
+
+            <svg class="ico foot-contact-arrow">
+              <use href="#i-arrow"/>
+            </svg>
+
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:info@devshuora.org" class="foot-contact-item">
+
+            <span class="foot-contact-icon">
+              <svg class="ico"><use href="#i-mail"/></svg>
+            </span>
+
+            <span class="foot-contact-text">
+              <small>Email us</small>
+              <strong>info@devshuora.org</strong>
+            </span>
+
+            <svg class="ico foot-contact-arrow">
+              <use href="#i-arrow"/>
+            </svg>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Footer CTA -->
+    <div class="footer-cta">
+
+      <div class="footer-cta-content">
+
+        <span class="footer-cta-label">
+          YOUR BUSINESS, BETTER ORGANIZED
+        </span>
+
+        <h3>
+          Ready to manage your shop
+          <span>the smarter way?</span>
+        </h3>
+
+        <p>
+          Bring your daily business records together with Digital Khata.
+        </p>
+
+      </div>
+
+      <div class="footer-cta-action">
+
+        <a href="#top" class="footer-cta-button">
+          Explore Digital Khata
+
+          <svg class="ico">
+            <use href="#i-arrow"/>
+          </svg>
+        </a>
+
+        <span class="footer-cta-note">
+          Simple business management starts here.
+        </span>
+
+      </div>
+
+      <div class="footer-cta-decoration" aria-hidden="true">
+        <svg class="ico"><use href="#i-globe"/></svg>
+      </div>
+
+    </div>
+
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+
+      <div class="footer-copyright">
+        <span class="footer-copyright-mark">©</span>
+
+        <span>
+          <span data-year>2026</span>
+          <strong>Devshuora Solutions.</strong>
+          All rights reserved.
+        </span>
+      </div>
+
+      <div class="footer-bottom-brand">
+        <span class="footer-bottom-dot"></span>
+        <span>Powered by Devshuora Digital Khata</span>
+      </div>
+
+      <a href="#top" class="footer-back-top">
+        Back to top
+
+        <svg class="ico">
+          <use href="#i-arrow"/>
+        </svg>
+      </a>
+
+    </div>
+
+  </div>
+</footer>
+
+
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a
+  class="wa-float wa-float-premium"
+  href="https://wa.me/923412149161?text=Assalam%20o%20Alaikum%2C%20I%20want%20a%20demo%20of%20Devshuora%20Digital%20Khata."
+  target="_blank"
+  rel="noopener"
+  aria-label="Chat with Devshuora on WhatsApp"
+  title="Chat with us"
+>
+  <svg class="ico"><use href="#i-chat"/></svg>
+  <span class="wa-tooltip">Chat with our team</span>
+</a>
+
+
+<!-- JAVASCRIPT -->
+<script src="assets/js/main.js?v=1" defer></script>
+
+</body>
+</html>
